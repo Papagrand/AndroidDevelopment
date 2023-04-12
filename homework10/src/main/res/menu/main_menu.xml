@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="1"
-        android:title="Настройки" />
-    <item
-        android:id="@+id/save_settings"
-        android:orderInCategory="3"
-        android:title="Сохранить" />
-    <item
-        android:id="@+id/open_settings"
-        android:orderInCategory="2"
-        android:title="Открыть" />
+        <item
+            android:id="@+id/pickTheme"
+            android:title="Темы"
+            android:orderInCategory="1">
+
+                <menu>
+                        <group android:checkableBehavior="single">
+                                <item
+                                    android:id="@+id/Light_theme"
+                                    android:orderInCategory="1"
+                                    android:title="Светлая тема"
+                                    android:checked="true"
+                                    />
+                                <item
+                                    android:id="@+id/Dark_theme"
+                                    android:orderInCategory="2"
+                                    android:title="Темная тема" />
+                                <item
+                                    android:id="@+id/LightPurple_theme"
+                                    android:orderInCategory="3"
+                                    android:title="Лиловая тема" />
+                        </group>
+
+                </menu>
+        </item>
+        <item
+            android:id="@+id/themeDefault"
+            android:orderInCategory="2"
+            android:title="По умолчанию"/>
+
 </menu>
