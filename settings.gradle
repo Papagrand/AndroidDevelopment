@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidDevelopment"
 include ':app'
 include ':homework10'
+include ':homework8'
