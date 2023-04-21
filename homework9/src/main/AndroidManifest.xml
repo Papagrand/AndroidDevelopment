@@ -9,6 +9,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment">
         <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".HardListActivity"
             android:exported="false" />
         <activity

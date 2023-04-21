@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] tasks = {"Ресурс string-array","Множественный выбор в списке", "Добавление и удаление", "Расширение списков", "Сложный список с кнопками"};
+    String[] tasks = {"Ресурс string-array","Множественный выбор в списке", "Добавление и удаление", "Расширение списков", "Сложный список с кнопками","Spinner", "GridView", "RecycleView"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +46,21 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case "Сложный список с кнопками":{
                         Intent intent = new Intent(MainActivity.this, HardListActivity.class);
+                        startActivity(intent);
+                        break;
+                    }
+                    case "Spinner":{
+                        Intent intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                        startActivity(intent);
+                        break;
+                    }
+                    case "GridView":{
+                        Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+                        startActivity(intent);
+                        break;
+                    }
+                    case "RecycleView":{
+                        Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                         startActivity(intent);
                         break;
                     }
