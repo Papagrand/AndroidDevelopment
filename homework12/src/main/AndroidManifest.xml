@@ -11,6 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment">
         <activity
+            android:name=".SendDataDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DialogFragActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dialog_frag"
+            android:theme="@style/Theme.AndroidDevelopment" />
+        <activity
             android:name=".TimeNDataActivity"
             android:exported="false" />
         <activity
@@ -44,7 +52,7 @@
         <service
             android:name=".MediaService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
     </application>
 
 </manifest>

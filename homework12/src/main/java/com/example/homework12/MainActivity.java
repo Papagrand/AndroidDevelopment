@@ -52,6 +52,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+            case R.id.buttonDialogFragActivity: {
+                Intent intent = new Intent(this, DialogFragActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.buttonSendData: {
+                Intent intent = new Intent(this, SendDataDialogActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 }

@@ -65,6 +65,14 @@
             android:layout_height="wrap_content"
             android:text="MusicActivity"
             android:onClick="onClickSwitch"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/buttonDialogFragActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DialogFragment"
+            android:onClick="onClickSwitch"
             />
 
     </LinearLayout>
@@ -81,6 +89,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CellAnimation"
+            android:onClick="onClickSwitch"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/buttonSendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SendData"
             android:onClick="onClickSwitch"
             />
 
