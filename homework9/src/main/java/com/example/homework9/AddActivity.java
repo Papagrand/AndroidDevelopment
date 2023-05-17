@@ -31,7 +31,7 @@ public class AddActivity extends AppCompatActivity {
         MultiAutoCompleteTextView multiAutoCompleteTextView = findViewById(R.id.flowerName);
         ArrayAdapter<String> adapter2 = new ArrayAdapter (this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,moreFlowers);
         multiAutoCompleteTextView.setAdapter(adapter2);
-        multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+        multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());// Comma ставит запятую
             // добавляем начальные элементы
             Collections.addAll(flowers, "Роза", "Тюльпан", "Лютик");
             // получаем элемент ListView
@@ -57,6 +57,11 @@ public class AddActivity extends AppCompatActivity {
     public void add(View view){
         MultiAutoCompleteTextView flowerName = findViewById(R.id.flowerName);
         String flower = flowerName.getText().toString();
+        if (!flower.isEmpty()) {
+            if (flower.charAt(flower.length() - 1) == ' ') {
+                flower = flower.substring(0, flower.length() - 2);
+            }
+        }
         if(flowers.contains(flower)){
             Toast.makeText(this, "This flower already exists in the list", Toast.LENGTH_SHORT).show();
         }
