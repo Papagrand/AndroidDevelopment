@@ -39,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+            case R.id.button_task7Sqlite: {
+                Intent intent = new Intent(this, Task7SQLite.class);
+
+                startActivity(intent);
+                break;
+            }
             case R.id.button_openhelper: {
                 Intent intent = new Intent(this, OpenHelper.class);
 
